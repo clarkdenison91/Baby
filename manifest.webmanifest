@@ -1,0 +1,13 @@
+{
+  "name": "Baby Log",
+  "short_name": "Baby Log",
+  "description": "Track a newborn's sleep, feeds and diapers.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#19c3b5",
+  "theme_color": "#19c3b5",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

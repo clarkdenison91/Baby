@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Baby Log</title>
+  <meta name="description" content="A simple tracker for a newborn's sleep, feeds and diapers.">
+  <meta name="theme-color" content="#19c3b5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Baby Log">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <h1 class="logo" aria-label="Baby Log"><span class="w1">Baby</span> <span class="w2">Log!</span></h1>
+    <p id="babyline" class="babyline"></p>
+  </header>
+
+  <main id="app"></main>
+
+  <nav class="tabs" aria-label="Sections">
+    <button data-action="tab" data-tab="today"><span aria-hidden="true">⭐</span>Today</button>
+    <button data-action="tab" data-tab="week"><span aria-hidden="true">📊</span>Week</button>
+    <button data-action="tab" data-tab="settings"><span aria-hidden="true">⚙️</span>Setup</button>
+  </nav>
+
+  <dialog id="sheet"><div id="sheet-body" class="sheet-body"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <input id="import-file" type="file" accept="application/json,.json" hidden>
+
+  <script src="app.js"></script>
+</body>
+</html>
